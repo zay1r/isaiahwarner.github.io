@@ -448,7 +448,6 @@ body {
   
     display: flex;
     transition: transform 0.5s ease;
-    justify-content: space-evenly;
     margin-bottom:1em;
 
 }
@@ -480,7 +479,7 @@ body {
   border: solid 3px #FF7A3D;
   border-radius: 20px;
   margin-bottom: 1rem; /* this may need to change */
-  justify-content: space-between; /* Evenly distribute children */
+     /* Evenly distribute children */
   align-items: center;
 }
 
