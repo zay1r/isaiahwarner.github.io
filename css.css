@@ -1027,6 +1027,11 @@ body {
     .slider-item {
       border-radius: 5px;
     }
+    
+    .slider-item p{
+      font-size: 1rem;
+    }
+  
 
     .projects {
       font-size: 1.5rem;
