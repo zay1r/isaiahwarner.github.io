@@ -1,23 +1,4 @@
 
-document.querySelector(".contact-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-  
-  emailjs.send(
-      "service_oex0w0i",
-      "template_o5td2ej",
-      {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          subject: document.getElementById("subject").value,
-          message: document.getElementById("message").value
-      },
-      "sA3kGQWm2XzhFKT6f"
-  ).then(function(response) {
-      console.log("SUCCESS", response.status, response.text);
-  }, function(error) {
-      console.log("FAILED", error);
-  });
-});
 
 
 //accordian funtionality
