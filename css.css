@@ -246,6 +246,7 @@ body {
   .experience h2{
     display:flex;
     font-size: .75em;
+    flex-direction: column;
 
   }
   
@@ -265,7 +266,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color:#0c0d3b;
+        color:#04041c;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -341,6 +342,33 @@ body {
       overflow: hidden;
       transition: max-height 0.2s ease-out;
     }
+
+    .panel h5{
+
+      margin-top:1rem;
+      margin-bottom: 1rem;
+      
+    }
+
+    .panel li{
+      
+      font-size: 2rem;
+      font-weight: lighter;
+      
+
+    }
+
+    .panel ul{
+      padding:0;
+      display:flex;
+      margin:1rem;
+      flex-direction:column;
+      align-items: center;
+      
+      
+    }
+
+
 
     .slider-buttons button{
 
