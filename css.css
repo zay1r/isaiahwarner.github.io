@@ -262,6 +262,8 @@ body {
     justify-content: flex-start;
   }
 
+ 
+
     .education-header h2{
         display: flex;
         flex-direction: column;
@@ -307,7 +309,7 @@ body {
 
     .accordion {
       background-color: #eee;
-      color: #444;
+      color: #04041c;
       cursor: pointer;
       padding: 18px;
       width: 100%;
@@ -317,9 +319,10 @@ body {
       font-size: 15px;
       transition: 0.4s;
     }
+
     
     .active, .accordion:hover {
-      background-color: #ccc;
+      background-color: #FF7A3D;
     }
     
     .accordion:after {
@@ -331,9 +334,9 @@ body {
     }
     
    /*This was causeing weird dashes */
-    /*.active:after {
+    .experience .active::after {
       content: "\2212";
-    }*/
+    }
     
     .panel {
       padding: 0 18px;
@@ -344,7 +347,7 @@ body {
     }
 
     .panel h5{
-
+      color: #04041c;
       margin-top:1rem;
       margin-bottom: 1rem;
       
@@ -368,7 +371,11 @@ body {
       
     }
 
-
+  .skills-accordian{
+    margin-left:1rem;
+    margin-right:1rem;
+    margin-bottom:1rem;
+}
 
     .slider-buttons button{
 
@@ -389,8 +396,8 @@ body {
 
 .slider{
     
-  max-height:25em;
-  max-width: 25em;
+  max-height: 95%;
+  max-width: 95%;
   overflow: hidden;
     
 }
@@ -465,8 +472,8 @@ body {
     
 .slider-projects{
   
-  max-height:25em;
-  max-width: 25em;
+  max-height: 95%;
+  max-width: 95%;
   overflow: hidden;
     
 }
@@ -603,7 +610,8 @@ body {
     border: 2px solid #FF7A3D;
 
  }
- 
+
+
     .form-header h1{
         display: flex;
         align-content: top;
@@ -719,8 +727,8 @@ body {
     }
   
     .slider {
-      max-height: 20em;
-      max-width: 20em;
+      max-height: 95%;
+      max-width: 95%;
     }
   
     .slider-item {
@@ -738,8 +746,8 @@ body {
   }
 
   .slider-projects {
-      max-height: 30em;
-      max-width: 30em;
+    max-height: 95%;
+    max-width: 95%;
   }
 
   .slider-item-projects {
@@ -880,8 +888,8 @@ body {
     }
   
     .slider {
-      max-height: 20em;
-      max-width: 20em;
+      max-height: 90%;
+      max-width: 90%;
     }
   
     .slider-item {
@@ -907,8 +915,8 @@ body {
 
   .slider-projects {
   
-      max-height: 25em;
-      max-width: 25em;
+    max-height: 95%;
+    max-width: 95%;
   }
 
   .slider-item-projects {
@@ -1040,6 +1048,8 @@ body {
       font-size: 1.5rem;
       padding: 0.25em;
     }
+
+    
   
     .skill-icons i {
       font-size: 1.25em;
@@ -1060,12 +1070,13 @@ body {
       
     }
 
+    
 
-  
+   
     .slider {
       
-      max-height: 25em;
-      max-width: 25em;
+      max-height: 95%;
+      max-width: 95%
     }
   
     .slider-item {
@@ -1081,8 +1092,8 @@ body {
 
 }
   .slider-projects {
-      max-height: 25em;
-      max-width: 25em;
+    max-height: 95%;
+    max-width: 95%;
   }
 
   .slider-item-projects h3,
