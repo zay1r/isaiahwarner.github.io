@@ -268,7 +268,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color:#04041c;
+        color:#0c0d3b;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -307,16 +307,20 @@ body {
       color:#FF7A3D
     }
 
+    .experience h2{
+      color: #0c0d3b; 
+    }
+
     .accordion {
       background-color: #eee;
-      color: #04041c;
+      color: #0c0d3b;
       cursor: pointer;
       padding: 18px;
       width: 100%;
       border: none;
       text-align: left;
       outline: none;
-      font-size: 15px;
+      font-size: 1.5rem;
       transition: 0.4s;
     }
 
@@ -347,17 +351,38 @@ body {
     }
 
     .panel h5{
-      color: #04041c;
+      color: #0c0d3b;
+      font-size: 2rem;
       margin-top:1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0;
       
     }
 
     .panel li{
-      
+      color:#0c0d3b;
       font-size: 2rem;
       font-weight: lighter;
       
+    }
+
+    .panel li::marker{
+      color: #FF7A3D;
+      
+    }
+    .panel p{
+      color: #0c0d3b;
+      font-size: 2rem;
+      margin:0;
+      align-items: left;
+      text-align: left;
+
+    }
+
+    .panel hr{
+      max-width: 25%;
+      margin-top:0.25rem;
+      color: #FF7A3D ;
+      border: solid 2px;
 
     }
 
@@ -366,7 +391,9 @@ body {
       display:flex;
       margin:1rem;
       flex-direction:column;
-      align-items: center;
+      align-items: left;
+      text-align: left;
+      margin-left: 10rem;
       
       
     }
