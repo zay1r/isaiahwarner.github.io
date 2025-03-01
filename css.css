@@ -367,6 +367,7 @@ body {
 
     .panel li::marker{
       color: #FF7A3D;
+      margin:0;
       
     }
     .panel p{
@@ -386,18 +387,23 @@ body {
 
     }
 
-    .panel ul{
-      padding:0;
-      display:flex;
-      margin:1rem;
-      flex-direction:column;
-      align-items: left;
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:2rem;
       text-align: left;
-      margin-left: 10rem;
-      
-      
-    }
+  }
+  
+  .grid-container li::marker{
+    content: "★";
+    color: #FF7A3D;
+    
+  }
 
+    
+    
+   
+    
   .skills-accordian{
     margin-left:1rem;
     margin-right:1rem;
