@@ -70,15 +70,17 @@ animation-range: entry 0% cover 40%;
 .page1 {
     background-color: #f8b400;
     display: grid;
-    
+
 }
 
 .page2 {
     background-color: #34b3f1;
+    display: grid;
 }
 
 .page3 {
     background-color: #4caf50;
+    display: grid;
 }
 
 </style>
@@ -88,21 +90,105 @@ animation-range: entry 0% cover 40%;
         <div class="scroll-page-sections">
             <section class="page1 fade-in">
                 <h1> EXcel Golf Tracker</h1>
-                <p>As an avid golfer and a data professional I decided to combine two of my passions. 
-                    While having some fun and gaining insights about traits of my golfing abilities, 
-                    The purpose of this project was to find my average distance travel and the tendencies of 
-                    the flight path of my shots categorized mainly by individual club
+                <hr>
+                <div class="Project-overview">
+                    <img src="ballontee.PNG" alt="ball on tee">
+                    <p>As an avid golfer and a data professional I decided to combine two of my passions. 
+                        While having some fun and gaining insights about traits of my golfing abilities, 
+                        The purpose of this project was to find my average distance travel and the tendencies of 
+                        the flight path of my shots categorized mainly by individual club
+                    </p>
+                </div>
+                <div class="data-overview">
+                    <h1>Data Trasforming and Cleaning:</h1>
+                    <p>The only transforming of the data was manipulating the table to access given fields and measures to create rows and columns for my pivot table to extract KPIs from my data
+                        Data cleaning that was implemented consisted of making sure the entries in the shot direction field were in proper form, by using using the "Proper()" function in Excel while creating my table
+                        The main reason for this is that I didn't want issues while grouping the fields in the pivot tables ensuring uniformity between entries
+                    </p>
+
+                </div>
+                <div class="Tools-techniques">
+                    <h1>Data Visulazation:</h1>
+                    <img src="GolfTracker.png">
+                    <p>
+                        This is my dashboard for my golf data Tracker: 
+                        <ui>
+                            <li>A.Total and Carry Distances plotted on a graph</li>
+                            <li>B.Average Carry, Total, and Roll-out Distances</li> 
+                            <li>C.Average Club speed</li> 
+                            <li>D.Percentage shot Direction</li>
+                        </ui>
+                    </p>
+                </div>
+            <div class="key-insights">
+                <h1>Summary of findings:</h1>
+                <img src="golfcharts.png">
+                <p>The key findings within this data are the tendencies of my shot shapes
+                    <ul>
+                        <li>It was found that for all my clubs my main shot 
+                            direction was mainly straight, with 38% of my shouts going straight
+                        </li>
+                        <li>35% of my shots are going in the left direction
+                            
+                        </li>
+                        <li>It can be assumed that if I don't change anything with my shot 
+                            there is just over a 70% chance the ball will go straight or left
+                        </li>
+                        <li>Furthermore when I use my irons 85% of the time my shot will go 
+                            left or straight
+                        </li>
+                        <li>With my longer clubs such as my driver, hybrids, and fairway woods the 
+                            distribution is a lot more even seeing around a 20% split of all directions
+                        </li>
+                    </ul>                    
                 </p>
+            </div>
+            <div class="Data-impact">
+                <h1>Data Overview</h1>
+                <p>
+                    <ul>
+                        <li>This data is essential to enhance golfing for me now that I know what clubs to use 
+                            for a given distance and what shot direction I tend to hit towards</li>
+                        <li>concluding the findings that I may have to weaken my grip on the club to hit more shots straight</li>
+                        <li>In the future, I am looking to implement some analytics to compare my shot speed and distances to 
+                            the PGA Tour Professionals and see the difference between our shot distances and club speed</li>
+                        <li>I am also looking to include a function to calculate how far the ball will go based on the club speed, ball spin rate, and other key measures. 
+                            I believe this forecasting algorithm can be achieved by linear regression in tandem with python.</li>
+                        <li>I'm looking forward to adding to this data set and watching the change in trend throughout the coming months</li>
+                    </ul>
+                </p>
+            </div>
             </section>
 
             <section class="page2 fade-in">
-                <h1>Page 2</h1>
-                <p>This is the second page content.</p>
-            </section>
+                <h1>Data Science</h1>
+                <h1>Project Overview:</h1>
+                    <p>Provide an overview of the project and its objectives.</p>
+                <h1>Data Collection and Preprocessing:</h1>
+                    <p> Describe how you collected, cleaned, and prepared the data for analysis.</p>
+                <h1>Models and Algorithms:</h1>
+                    <p> List the machine learning models and algorithms you used (e.g., regression, classification, clustering, etc.).</p>
+                <h1>Evaluation and Metrics:</h1>
+                    <p> Discuss how you evaluated the performance of your models using relevant metrics (e.g., accuracy, precision, recall, F1-score, etc.).</p>
+                <h1>Results and Interpretation:</h1>
+                    <p> Present the results of your models, along with interpretations and conclusions.</p>
+                <h1>Visualizations:</h1>
+                    <p>Include visualizations that illustrate your data science process and findings.</p>
+                </section>
 
             <section class="page3 fade-in">
-                <h1>Page 3</h1>
-                <p>This is the third page content.</p>
+                <h1>Web Development</h1>
+                    <p>This is the third page content.</p>
+                <h1>Project Overview:</h1>
+                    <p>Briefly describe the project, including its purpose and objectives.
+                    </p>
+                <h1>Technologies Used:</h1>
+                    <p> List the web technologies and tools you used (e.g., HTML, CSS, JavaScript, React, Node.js, etc.)./p>
+                <h1>Features:</h1>
+                    <p> Highlight the key features and functionalities of the project (e.g., responsive design, user authentication, API integration, etc.).</p>
+                <h1>Challenges and Solutions:</h1>
+                    <p> Discuss any challenges you faced and how you overcame them, demonstrating your problem-solving skills.</p>
+            
             </section>
 
             <div class="floating-button">
