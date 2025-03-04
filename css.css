@@ -399,10 +399,6 @@ body {
     color: #FF7A3D;
     
   }
-
-    
-    
-   
     
   .skills-accordian{
     margin-left:1rem;
@@ -414,9 +410,7 @@ body {
 
         display: flex;
         align-items: center;
-        width: 50px;
-        
-        
+        width: 50px;   
     }
 
     .slider-buttons{
@@ -666,34 +660,9 @@ body {
   /*end form CSS */
 
   
-  /* Project landing page CSS */
-
-  body .float-button{
-
-    display: flex;
-    justify-items: right;
-    z-index: 2;
-    background-color: #FF7A3D;
-  }
 
 
-  .float-button a{
 
-    background-color: #0c0d3b;
-    color: #f0f0f0;
-    border-radius: 20px;
-    font-size: x-large;
-    text-decoration: none;
-    padding: 1rem;
-    
-
-  }
-  .float-button a:hover{
-
-    background-color: #FF7A3D;
-    
-
-  }
   @media (max-width: 992px) {
   
 
@@ -897,6 +866,29 @@ body {
     .experience h2 {
       font-size: 0.55em;
     }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap:2rem;
+      text-align: left;
+      font-size: 1.5rem;
+  }
+
+  .panel li{
+    font-size: 1.5rem;
+  }
+
+  .panel p{
+    font-size:1.5rem;
+
+  }
+  
+  .grid-container li::marker{
+    content: "★";
+    color: #FF7A3D;
+    
+  }
   
     .education {
       font-size: 1.75rem;
@@ -1082,7 +1074,28 @@ body {
       padding: 0.25em;
     }
 
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap:2rem;
+      text-align: left;
+      font-size: 1.5rem;
+  }
+
+  .panel li{
+    font-size: 1.5rem;
+  }
+
+  .panel p{
+    font-size:1.5rem;
+
+  }
+  
+  .grid-container li::marker{
+    content: "★";
+    color: #FF7A3D;
     
+  }
   
     .skill-icons i {
       font-size: 1.25em;
@@ -1103,8 +1116,6 @@ body {
       
     }
 
-    
-
    
     .slider {
       
@@ -1120,10 +1131,10 @@ body {
       font-size: 1.5rem;
       padding: 0.25em;
   }
-.projects-header hr{
-  margin-bottom:1em;
+    .projects-header hr{
+    margin-bottom:1em;
 
-}
+    }
   .slider-projects {
     max-height: 95%;
     max-width: 95%;
