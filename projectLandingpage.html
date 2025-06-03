@@ -13,7 +13,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0c0d3b;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -22,6 +22,26 @@
     font-weight: 750;
     font-size: 1.5rem;
   }
+.image-grid{
+    margin-bottom: 2rem; 
+    height: 50%;
+}
+    .Script-link a{
+    margin-top: 1rem;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0c0d3b;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 750;
+    font-size: 1.5rem;
+    }
+    .Script-link a:hover{
+    background-color: #FF7A3D;
+    }
 
   .floating-button a:hover{
     background-color: #FF7A3D;
@@ -52,39 +72,7 @@
     margin:0;
 
   }
-/*
-.page1 {
-    background-color: #f0f0f0;
-    display: grid;
-    margin-left: 1rem;
-    margin-right:1rem;
-
-}
-
-.data-art{
-    align-items: center;
-    border: dotted red;
-    display: flex;
-}
-*/
-
-/* Possible header fix need to play with it
-
-position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    color: #0c0d3b;
-    height: auto; Height of the header 
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-
-*/
+  
 .section-header{
     display:flex;
     font-size: 2.5rem;
@@ -103,17 +91,6 @@ position: fixed;
     
 }
 
-/*.page1 .project-overview{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;  
-}
-
-.project-overview img{
-    grid-column: 2/3;
-    grid-row: 2/-2;
-
-}*/
 
 .data-overview img{
     height: 20rem;
@@ -469,9 +446,157 @@ position: fixed;
             background-color: rgba(0, 0, 0, 0.5);
         }
 
+        /* Media query for screens 576px and smaller */
+@media (max-width: 576px) {
+    /* Remove specific images only */
+    .slider-itemp2 #slide-2 img,
+    .slider-itemp3 #slide-2 img {
+        display: none;
+    }
+
+    /* Adjust layout for smaller screens */
+    html {
+        scroll-snap-type: none; /* Remove snap scrolling */
+    }
+
+    section {
+        height: auto; /* Allows sections to adjust dynamically */
+        padding: 1rem;
+    }
+
+    .floating-button a,
+    .Script-link a {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+
+    .section-header {
+        font-size: 1.75rem;
+    }
+
+    .project-overview ul,
+    .Visualizations {
+        font-size: 1.5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items */
+        gap: 1rem;
+    }
+
+    .dashboard img,
+    .dashboard2 img {
+        width: 100%; /* Adjust image size */
+        height: auto;
+    }
+}
+
+/* Media query for screens 768px and smaller */
+@media (max-width: 768px) {
+    /* Remove snap scrolling */
+    html {
+        scroll-snap-type: none;
+    }
+
+    section {
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .section-header {
+        font-size: 2rem;
+    }
+
+    .floating-button a,
+    .Script-link a {
+        font-size: 1.25rem;
+        padding: 10px 12px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack items */
+        gap: 1.5rem;
+    }
+
+    .dashboard img,
+    .dashboard2 img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Media query for screens 992px and smaller */
+@media (max-width: 992px) {
+    .floating-button a,
+    .Script-link a {
+        font-size: 1.5rem;
+        padding: 12px 15px;
+    }
+
+    .section-header {
+        font-size: 2.25rem;
+    }
+
+    .Visualizations,
+    .project-overview ul {
+        font-size: 1.75rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Maintain a two-column layout */
+        gap: 2rem;
+    }
+
+    .dashboard img,
+    .dashboard2 img {
+        width: 85%;
+        height: auto;
+    }
+
+
+    /* Media query for screens 576px and smaller */
+@media (max-width: 576px) {
+    /* Hide image-grid contents */
+    .image-grid {
+        display: none;
+    }
+
+    /* Make grid-container span full width */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        width: 100%;
+    }
+}
+
+/* Media query for screens 768px and smaller */
+@media (max-width: 768px) {
+    /* Hide image-grid contents */
+    .image-grid {
+        display: none;
+    }
+
+    /* Adjust grid-container to span full width */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        width: 100%;
+    }
+}
+
+/* Media query for screens 992px and smaller */
+@media (max-width: 992px) {
+    /* Keep grid-container structured but adjust width */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        width: 100%;
+    }
+}
+}
+
 </style>
 
 </head>
+
+
 <body class="landing-page-body">
     
         <section class="page2 fade-in">
@@ -480,13 +605,13 @@ position: fixed;
                     <hr>
                 </div>
                    
-                <div class="slider-item" id="slide-1">
+                
                     <div class="sliderp2">
                         <div class="slidesp2">   
                             <div class="slider-itemp2" id="slide-1">
                                 <div class="dashboard">
-                                <img src="images/Dealershipdashboard.PNG" alt="Car Dealership Dashboard">
-                            </div class="dashboard">
+                                    <img src="images/Dealershipdashboard.PNG" alt="Car Dealership Dashboard">
+                                </div>
                             
                             <div class="Visualizations">
                             
@@ -511,11 +636,9 @@ position: fixed;
             </div>
 
             <div class="slider-itemp2" id="slide-2">
-                <div class="slider-itemp3" id="slide-2">
-                
                     <div class="grid-container">
                         <div class="image-grid">
-                        <img src="images/datacollection.PNG" alt="Golf Dashboard">
+                        
                             <div class="Script-link">
                                 <a href="https://github.com/zay1r/Car-Sales-Script/blob/main/Car_prices.py" target="_blank">Click here to View Script</a>
                             </div>
@@ -626,7 +749,7 @@ position: fixed;
                             
                             <div class="dashboard2">
                                 <img src="images/GolfTracker.PNG" alt="Golf Dashboard">
-                            </div class="dashboard2">
+                            </div>
                     <div class="Visualizations">
                         
                         <p>
@@ -636,7 +759,7 @@ position: fixed;
                              providing me with actionable insights to refine my game.
                         </p>
                     </div>
-                    <div class="project-overview">
+                        <div class="project-overview">
                         <h2>I created this Dashboard to:</h2>
                             <ul>
                               <li>Track and visualize golf shot distances across various clubs.</li>  
@@ -645,7 +768,7 @@ position: fixed;
                               <li>Leverage data analysis techniques in Excel to uncover performance patterns.</li>
                         </ul>
                         
-                    </div>
+                        </div>
                     </div> 
                     <div class="slider-itemp3" id="slide-2">
                 
