@@ -448,10 +448,64 @@
 
         /* Media query for screens 576px and smaller */
 @media (max-width: 576px) {
+
+ 
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page2 fade-in,
+  .page3 fade-in {
+    padding: 0;
+
+  }
+
+  .results2 p{
+    background-color: #FF7A3D;
+    font: 10rem;
+
+  }
+
+  button{
+    padding: 1em;
+    font-size:.25em;
+
+  }
+
+  .dashboard img,
+  .dashboard2 img,
+  .image-grid {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .grid-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
     /* Remove specific images only */
     .slider-itemp2 #slide-2 img,
     .slider-itemp3 #slide-2 img {
         display: none;
+    }
+
+    .image-grid {
+        display: none;
+    }
+
+    /* Make grid-container span full width */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        width: 100%;
     }
 
     /* Adjust layout for smaller screens */
@@ -461,13 +515,14 @@
 
     section {
         height: auto; /* Allows sections to adjust dynamically */
-        padding: 1rem;
+        /*padding: 1rem;*/
     }
 
     .floating-button a,
     .Script-link a {
         font-size: 1rem;
         padding: 8px 10px;
+        
     }
 
     .section-header {
@@ -496,6 +551,16 @@
     /* Remove snap scrolling */
     html {
         scroll-snap-type: none;
+    }
+
+    .image-grid {
+        display: none;
+    }
+
+    /* Adjust grid-container to span full width */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        width: 100%;
     }
 
     section {
@@ -553,44 +618,13 @@
         height: auto;
     }
 
-
-    /* Media query for screens 576px and smaller */
-@media (max-width: 576px) {
-    /* Hide image-grid contents */
-    .image-grid {
-        display: none;
-    }
-
-    /* Make grid-container span full width */
     .grid-container {
         grid-template-columns: 1fr; /* Single column layout */
         width: 100%;
     }
 }
+    
 
-/* Media query for screens 768px and smaller */
-@media (max-width: 768px) {
-    /* Hide image-grid contents */
-    .image-grid {
-        display: none;
-    }
-
-    /* Adjust grid-container to span full width */
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column layout */
-        width: 100%;
-    }
-}
-
-/* Media query for screens 992px and smaller */
-@media (max-width: 992px) {
-    /* Keep grid-container structured but adjust width */
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column layout */
-        width: 100%;
-    }
-}
-}
 
 </style>
 

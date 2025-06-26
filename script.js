@@ -34,19 +34,60 @@ function changeSlide(direction){
 
 //slider projects
 
-let currentSlides = 0;
-function changeSlides(direction){
-const slides = document.querySelectorAll('.slider-item-projects'); // Updated class name
-const totalSlides = slides.length;
+// let currentSlides = 0;
+// function changeSlides(direction){
+// const slides = document.querySelectorAll('.slider-item-projects'); // Updated class name
+// const totalSlides = slides.length;
 
-currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-const offset = -currentSlide * 100;
-document.querySelector('.slides-projects').style.transform = `translateX(${offset}%)`; // Updated class name
-}
+// currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+// const offset = -currentSlide * 100;
+// document.querySelector('.slides-projects').style.transform = `translateX(${offset}%)`; // Updated class name
+// }
+
+// document.addEventListener('DOMContentLoaded', () => {
+// changeSlides(0);
+// });
+
+
+// end slides projects
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
-changeSlides(0);
+  let currentSlides = 0;
+
+  // Array of link data for each project slide
+  const slideLinks = [
+    { href: "projectLandingpage.html", label: "Car Dealership Dashboard" },
+    { href: "salesdashboard.html", label: "Golf Dashboard" }
+  ];
+
+  const slides = document.querySelectorAll('.slider-item-projects');
+  const totalSlides = slides.length;
+  const slidesContainer = document.querySelector('.slides-projects');
+  const projectLink = document.getElementById('project-link');
+  const prevButton = document.querySelector('.prevs');
+  const nextButton = document.querySelector('.nexts');
+
+  function changeSlides(direction) {
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    const offset = -currentSlide * 100;
+    slidesContainer.style.transform = `translateX(${offset}%)`;
+
+    // Update link based on slide
+    projectLink.href = slideLinks[currentSlide].href;
+    projectLink.textContent = `View: ${slideLinks[currentSlide].label}`;
+  }
+
+  // Attach button click events
+  prevButton.addEventListener('click', () => changeSlides(-1));
+  nextButton.addEventListener('click', () => changeSlides(1));
+
+  // Initialize the first slide
+  changeSlides(0);
 });
+
+//end slider projects new script
 
 
 // Hamburger Menu 
