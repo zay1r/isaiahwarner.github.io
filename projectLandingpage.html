@@ -22,9 +22,8 @@
     font-weight: 750;
     font-size: 1.5rem;
   }
-.image-grid{
-    margin-bottom: 2rem; 
-    height: 50%;
+.Script-link{
+    text-align: center;
 }
     .Script-link a{
     margin-top: 1rem;
@@ -38,6 +37,7 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 750;
     font-size: 1.5rem;
+    
     }
     .Script-link a:hover{
     background-color: #FF7A3D;
@@ -47,31 +47,14 @@
     background-color: #FF7A3D;
   }
 
-  body{
-    margin:0;
 
-  }
 
-  html{
-    scroll-snap-type: y mandatory;
+  
 
-  }
-
-  section{
-    height: 100vh; 
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    }
 
     
 
-  section h1{
-    margin:0;
 
-  }
   
 .section-header{
     display:flex;
@@ -82,6 +65,10 @@
     align-items: center;
     flex-direction: column;    
 
+}
+.section-header h1{
+    margin: 0;
+    padding-top: 1rem;
 }
 
 .section-header hr{
@@ -100,29 +87,7 @@
     height:25rem;
 }
 
-.page2 {
-    background-color:#f0f0f0;
-    display: grid;
-    height: 100vh;
-    color: #0c0d3b;
-}
 
-.page3 {
-    background-color: #f0f0f0;
-    display: grid;
-    height: 100vh;
-    color: #0c0d3b;
-}
-
-#slide-1{
-    background-color:#f0f0f0;
-}
-#slide-2{
-    background-color:#f0f0f0;
-}
-.slider-item{
-    margin-bottom: 2rem;
-}
 .dashboard{
     display: flex;
     justify-content: center;
@@ -233,13 +198,14 @@
     margin-left: 1rem;
     margin-right: 1rem;
     flex-direction: column;
-    
+    color: #0c0d3b;
     /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/  
     font-size: 2rem;
 }
 
 .dashboard-design h1{
    text-align: center; 
+   color: #0c0d3b;
 }
 
 .dashboard-design li::marker{
@@ -283,6 +249,7 @@
     flex-direction: column;
     /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/  
     font-size: 1.75rem;
+    color: #0c0d3b;
 }
 
 
@@ -327,302 +294,9 @@
   grid-row: 3;
 }
 
-.slider {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-        }
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .slider-item {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .slider-buttons {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-            
-        }
-        .slider-buttons button {
-            background-color: rgba(0.0, 0.0, 0.0, 0.25);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 4rem;
-        }
-
-        .slider-buttons button:hover{
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-
-
-
-        .sliderp2 {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            
-        }
-        .slidesp2 {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            
-        }
-        .slider-itemp2 {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-
-        .slider-buttonsp2 {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-            
-        }
-        .slider-buttonsp2 button {
-            background-color: rgba(0.0, 0.0, 0.0, 0.25);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 4rem;
-        }
-
-        .slider-buttonsp2 button:hover{
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-
-        
-        .sliderp3 {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-        }
-        .slidesp3 {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .slider-itemp3 {
-            min-width: 100%;
-            box-sizing: border-box;
-            
-        }
-
-        .slider-buttonsp3 {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-            
-        }
-        .slider-buttonsp3 button {
-            background-color: rgba(0.0, 0.0, 0.0, 0.25);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            font-size: 4rem;
-        }
-
-        .slider-buttonsp3 button:hover{
-            background-color: rgba(0, 0, 0, 0.5);
-        }
 
         /* Media query for screens 576px and smaller */
-@media (max-width: 576px) {
 
- 
-
-  body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-  img, video, iframe {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .page2 fade-in,
-  .page3 fade-in {
-    padding: 0;
-
-  }
-
-  .results2 p{
-    background-color: #FF7A3D;
-    font: 10rem;
-
-  }
-
-  button{
-    padding: 1em;
-    font-size:.25em;
-
-  }
-
-  .dashboard img,
-  .dashboard2 img,
-  .image-grid {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  .grid-container {
-    width: 100%;
-    overflow-x: hidden;
-  }
-    /* Remove specific images only */
-    .slider-itemp2 #slide-2 img,
-    .slider-itemp3 #slide-2 img {
-        display: none;
-    }
-
-    .image-grid {
-        display: none;
-    }
-
-    /* Make grid-container span full width */
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column layout */
-        width: 100%;
-    }
-
-    /* Adjust layout for smaller screens */
-    html {
-        scroll-snap-type: none; /* Remove snap scrolling */
-    }
-
-    section {
-        height: auto; /* Allows sections to adjust dynamically */
-        /*padding: 1rem;*/
-    }
-
-    .floating-button a,
-    .Script-link a {
-        font-size: 1rem;
-        padding: 8px 10px;
-        
-    }
-
-    .section-header {
-        font-size: 1.75rem;
-    }
-
-    .project-overview ul,
-    .Visualizations {
-        font-size: 1.5rem;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr; /* Stack items */
-        gap: 1rem;
-    }
-
-    .dashboard img,
-    .dashboard2 img {
-        width: 100%; /* Adjust image size */
-        height: auto;
-    }
-}
-
-/* Media query for screens 768px and smaller */
-@media (max-width: 768px) {
-    /* Remove snap scrolling */
-    html {
-        scroll-snap-type: none;
-    }
-
-    .image-grid {
-        display: none;
-    }
-
-    /* Adjust grid-container to span full width */
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column layout */
-        width: 100%;
-    }
-
-    section {
-        height: auto;
-        padding: 1.5rem;
-    }
-
-    .section-header {
-        font-size: 2rem;
-    }
-
-    .floating-button a,
-    .Script-link a {
-        font-size: 1.25rem;
-        padding: 10px 12px;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr; /* Stack items */
-        gap: 1.5rem;
-    }
-
-    .dashboard img,
-    .dashboard2 img {
-        width: 90%;
-        height: auto;
-    }
-}
-
-/* Media query for screens 992px and smaller */
-@media (max-width: 992px) {
-    .floating-button a,
-    .Script-link a {
-        font-size: 1.5rem;
-        padding: 12px 15px;
-    }
-
-    .section-header {
-        font-size: 2.25rem;
-    }
-
-    .Visualizations,
-    .project-overview ul {
-        font-size: 1.75rem;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr 1fr; /* Maintain a two-column layout */
-        gap: 2rem;
-    }
-
-    .dashboard img,
-    .dashboard2 img {
-        width: 85%;
-        height: auto;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column layout */
-        width: 100%;
-    }
-}
     
 
 
@@ -640,9 +314,6 @@
                 </div>
                    
                 
-                    <div class="sliderp2">
-                        <div class="slidesp2">   
-                            <div class="slider-itemp2" id="slide-1">
                                 <div class="dashboard">
                                     <img src="images/Dealershipdashboard.PNG" alt="Car Dealership Dashboard">
                                 </div>
@@ -663,19 +334,18 @@
                         metrics with drill down filters for Location, Dealership, manufacture, car type, 
                         and date rage by year</p>
                         
+                        <div class="Script-link">
+                                <a href="https://github.com/zay1r/Car-Sales-Script/blob/main/Car_prices.py" target="_blank">Click here to View Script</a>
+                            </div>
             
                 </div>
                 
         
             </div>
 
-            <div class="slider-itemp2" id="slide-2">
-                    <div class="grid-container">
-                        <div class="image-grid">
-                        
-                            <div class="Script-link">
-                                <a href="https://github.com/zay1r/Car-Sales-Script/blob/main/Car_prices.py" target="_blank">Click here to View Script</a>
-                            </div>
+                    
+                        <div class="floating-button">
+                            <a href="index.html">Back to Home Page</a>
                         </div>
                     <div class="data-collection">
                         <h1>Data Collection</h1>
@@ -700,7 +370,7 @@
                             <li>Visual Representations: State Heatmap and bar charts and Tables for intuitive data exploration.</li>
                         </ul>
                     </div>
-                </div>
+                
                     <div class="results2">
                         <h1>Results and Key Takeaways:</h1>
                         <p>Your data analytics project showcases a well-structured approach to analyzing automobile sales, leveraging AI and Python to enhance data transformation and visualization. By cleaning and randomizing key financial fields, you ensured accuracy in revenue, profit margin, and commission calculations. The visualization provided valuable insights into dealership performance, showing December as the most profitable month and Maruti as the highest-selling car in terms of dollar value. Sales distribution remained balanced across energy types, while convertibles proved to have the longest turnover time. The most popular car colors—blue, black, and red—dominated sales, with North Carolina emerging as the most profitable state.
@@ -726,7 +396,7 @@
                     </div>
                 
 
-                </div>
+                
 
                 <!--
                 <div class="models-algorithms">
@@ -758,115 +428,13 @@
                     <h1>Results and Key Takeaways:</h1>
                     <p> Present the results of your models, along with interpretations and conclusions.</p>
                 </div>-->
-            </div>
+            
 
-
-        </div>
-        <!--Buttons can go here  if need be or above div-->
-        <div class="slider-buttonsp2">
-            <button class="prevp2" onclick="changeSlide(-1)">&#10094;</button>
-            <button class="nextp2" onclick="changeSlide(1)">&#10095;</button>
-          </div>
-        
-        </div>
                 </section>
 
-            <section class="page3 fade-in">
-                <div class="section-header">
-                    <h1>Golf Dashboard</h1>
-                    <hr>
-                </div>
+            
 
-                <div class="sliderp3">
-                    <div class="slidesp3">   
-                        <div class="slider-itemp3" id="slide-1">
-                            
-                            <div class="dashboard2">
-                                <img src="images/GolfTracker.PNG" alt="Golf Dashboard">
-                            </div>
-                    <div class="Visualizations">
-                        
-                        <p>
-                            This project is a data-driven golf performance tracker built in Excel,
-                             featuring a responsive dashboard. 
-                             The system analyzes my golf shot distances, accuracy, and directional trends,
-                             providing me with actionable insights to refine my game.
-                        </p>
-                    </div>
-                        <div class="project-overview">
-                        <h2>I created this Dashboard to:</h2>
-                            <ul>
-                              <li>Track and visualize golf shot distances across various clubs.</li>  
-                              <li>Identify accuracy trends to improve shot consistency.</li>
-                              <li>Develop a user-friendly dashboard that dynamically adjusts to input data.</li>
-                              <li>Leverage data analysis techniques in Excel to uncover performance patterns.</li>
-                        </ul>
-                        
-                        </div>
-                    </div> 
-                    <div class="slider-itemp3" id="slide-2">
-                
-                        <div class="grid-container">
-                            <div class="image-grid">
-                            <img src="images/datacollection.PNG" alt="Golf Dashboard">
-                            <div></div>
-                        </div>
-                        <div class="data-collection">
-                            <h1>Data Collection</h1>
-                            <ul>
-                                <li>Data was collected from my golf shots over a period of time, including club type, distance, and shot direction.</li>
-                                <li>Data was stored in an Excel spreadsheet for easy manipulation and analysis.</li>
-                                <li>Data was cleaned to ensure accuracy and consistency.</li>
-                            </ul>
-                        </div>
-                    
-                        <div class="dashboard-design">
-                            <h1>Dashboard Design and Features</h1>
-                            <ul>
-                                <li>Created a responsive dashboard that updates in real-time as new data is entered.</li>
-                                <li>Implemented pivot tables and charts to visualize key performance indicators (KPIs).</li>
-                                <li>Included slicers for easy filtering of data by club type, distance, and shot direction.</li>
-                                <li>Used conditional formatting to highlight trends and outliers in the data.</li>
-                                <li>Descriptive Statistics: Mean, median, mode, and variance for shot patterns.</li>
-                                <li>Comparative Insights: Club-by-club performance breakdown</li>
-                                <li>Visual Representations: Heatmaps and scatter plots for intuitive data exploration.</li>
-                            </ul>
-                        </div>
-                    </div>
-                        <div class="results2">
-                            <h1>Results and Key Takeaways:</h1>
-                            <p>The key findings within this data are the tendencies of my shot shapes
-                                It was found that for all my clubs my main shot direction was straight, with 38% of my shouts going straight
-                                35% of my shots are going in the left direction
-                                It can be assumed that if I don't change anything with my shot there is just over a 70% chance the ball will go straight or left
-                                Furthermore when I use my irons 85% of the time my shot will go left or straight
-                                With my longer clubs such as my driver, hybrids, and fairway woods the distribution is a lot more even seeing around a 20% split of all directions</p>
-
-                            <h1>Final Thoughts</h1>
-                            <p>
-                                This data is essential to enhance golfing for me now that I know what clubs to use for a given distance and what shot direction I tend to hit towards
-                                concluding the findings that I may have to weaken my grip on the club to hit more shots straight
-                                In the future, I am looking to implement some analytics to compare my shot speed and distances to the PGA Tour Professionals and see the difference between our shot distances and club speed
-                                I am also looking to include a function to calculate how far the ball will go based on the club speed, ball spin rate, and other key measures. I believe this forecasting algorithm can be achieved by linear regression in tandem with python.
-                                I'm looking forward to adding to this data set and watching the change in trend throughout the coming months    
-                            </p>
-                        </div>
-                    
-
-                    </div>
-                </div>
-                <!--Buttons can go here  if need be or above div-->
-                <div class="slider-buttonsp3">
-                    <button class="prevp3" onclick="changeSlide(-1)">&#10094;</button>
-                    <button class="nextp3" onclick="changeSlide(1)">&#10095;</button>
-                  </div>
-                
-                </div>  
-            </section>
-
-            <div class="floating-button">
-                <a href="index.html">Back to Main Page</a>
-            </div>
+            
         
              <!--<section class="page1 fade-in">
                 <div class="section-header">

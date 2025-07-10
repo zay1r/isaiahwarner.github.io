@@ -347,7 +347,7 @@ body {
       margin-left: 5px;
     }
     
-   /*This was causeing weird dashes */
+   
     .experience .active::after {
       content: "\2212";
     }
