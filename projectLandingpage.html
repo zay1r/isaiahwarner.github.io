@@ -46,15 +46,6 @@
   .floating-button a:hover{
     background-color: #FF7A3D;
   }
-
-
-
-  
-
-
-    
-
-
   
 .section-header{
     display:flex;
@@ -296,7 +287,28 @@
 
 
         /* Media query for screens 576px and smaller */
+@media screen and (max-width: 768px) {
+  .floating-button a {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+  .Script-link a {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+}
 
+/* ✅ Even smaller for mobile devices */
+@media screen and (max-width: 480px) {
+  .floating-button a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+  .Script-link a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+}
     
 
 
