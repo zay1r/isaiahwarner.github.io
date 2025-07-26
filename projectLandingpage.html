@@ -9,44 +9,7 @@
 
 
 <style>
-    .floating-button a{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 750;
-    font-size: 1.5rem;
-  }
-.Script-link{
-    text-align: center;
-}
-    .Script-link a{
-    margin-top: 1rem;
-    bottom: 20px;
-    right: 20px;
-    background-color: #0c0d3b;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 750;
-    font-size: 1.5rem;
-    
-    }
-    .Script-link a:hover{
-    background-color: #FF7A3D;
-    }
 
-  .floating-button a:hover{
-    background-color: #FF7A3D;
-  }
-  
 .section-header{
     display:flex;
     font-size: 2.5rem;
@@ -55,66 +18,18 @@
     text-align: center;
     align-items: center;
     flex-direction: column;    
-
+    margin-top: 1rem;
 }
 .section-header h1{
     margin: 0;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    color: #0c0d3b;
 }
 
 .section-header hr{
     margin:.1rem;
     border: solid 2px #FF7A3D;
     width: 35%;
-    
-}
-
-
-.data-overview img{
-    height: 20rem;
-}
-
-.key-insights img{
-    height:25rem;
-}
-
-
-.dashboard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    margin: 2rem;
-     
-    
-}
-
-.dashboard img{
-    width: auto;
-    height: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
-    border-radius: 10px;
-    max-width: 100%;
-}
-
-.dashboard2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    margin: 2rem;
-     
-    
-}
-
-.dashboard2 img{
-    width: 120rem;
-    height: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
-    border-radius: 10px;
-   
     
 }
 
@@ -144,13 +59,11 @@
     margin-left: 3rem;
     margin-right: 3rem;  
     font-size: 2rem;
-}
-
-.project-overview p{
-    margin-top: 0.5rem;
+      margin-top: 0.5rem;
     margin-bottom: 1.5rem;
     color: #0c0d3b;
 }
+
   
   .project-overview li::marker{
     content: "★";
@@ -175,6 +88,7 @@
     font-size: 2rem;
     color: #0c0d3b;
 }
+
 .data-collection li::marker{
     content: "★";
     color: #FF7A3D;
@@ -216,18 +130,6 @@
     /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/  
     font-size: 2rem;
 }
-.results{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    border-radius: 10px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    flex-direction: column;
-    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/  
-    font-size: 2rem;
-}
 
 .results2{
     display: flex;
@@ -244,12 +146,6 @@
 }
 
 
-  .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  text-align: left;
-}
 
 .data-collection {
   grid-row: 1;
@@ -275,15 +171,71 @@
   margin-bottom:.25rem;
 }
 
-.image-grid {
-  grid-column: 2;
-  grid-row: span 2; /* Spanning two rows */
-  place-items: center;
-}
 .results2 {
   grid-column: span 2;
   grid-row: 3;
 }
+
+.dashboard2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 2rem;
+     flex-direction: column;    
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/  
+    font-size: 2rem;
+    
+}
+
+.dashboard2 img{
+    width: auto;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+    .floating-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 750;
+    font-size: 1.5rem;
+      transition: font-size 0.3s ease, padding 0.3s ease;
+  }
+
+  .floating-button a:hover{
+    background-color: #FF7A3D;
+  }
+
+.Script-link{
+    text-align: center;
+}
+    .Script-link a{
+    margin-top: 1rem;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0c0d3b;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 750;
+    font-size: 1.5rem;
+    
+    }
+    .Script-link a:hover{
+    background-color: #FF7A3D;
+    }
 
 
         /* Media query for screens 576px and smaller */
@@ -317,16 +269,16 @@
 </head>
 
 
-<body class="landing-page-body">
+<body>
     
-        <section class="page2 fade-in">
+        <section class="page3 fade-in">
                 <div class="section-header">
                     <h1>Car Dealership Dashboard</h1>
                     <hr>
                 </div>
                    
                 
-                                <div class="dashboard">
+                                <div class="dashboard2">
                                     <img src="images/Dealershipdashboard.PNG" alt="Car Dealership Dashboard">
                                 </div>
                             
