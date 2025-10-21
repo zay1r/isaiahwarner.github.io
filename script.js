@@ -58,8 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Array of link data for each project slide
   const slideLinks = [
+    { href: "Golfleaderboard.html", label: "Full-Stack Golf Leaderboard" },
     { href: "projectLandingpage.html", label: "Car Dealership Dashboard" },
     { href: "salesdashboard.html", label: "Golf Dashboard" }
+    
   ];
 
   const slides = document.querySelectorAll('.slider-item-projects');

@@ -1,0 +1,406 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Isaiah's Golf LeaderBoard Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<style>
+
+body {
+            font-family: Arial, sans-serif;
+            /*background: #f4f4f4;*/
+            margin: 0;
+            padding: 0;
+        }
+
+.section-header{
+    display:flex;
+    font-size: 2.5rem;
+    
+    color:#0c0d3b;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;    
+    margin-top: 1rem;
+    margin-bottom:2.5rem;
+}
+.section-header h1{
+    margin: 0;
+    padding-top: 0.5rem;
+    color: #0c0d3b;
+}
+
+.section-header hr{
+    margin:.1rem;
+    border: solid 2px #FF7A3D;
+    width: 35%;
+    
+}
+
+.Visualizations {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;  
+    font-size: 2rem;
+    color: #0c0d3b;
+}
+
+.Visualizations p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.project-overview p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;  
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #0c0d3b;
+}
+
+.project-overview li::marker{
+    content: "★";
+    color: #FF7A3D;
+    
+}
+
+.project-overview ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2rem;
+    text-align: left;
+    font-size: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    color: #0c0d3b;
+}
+
+
+.project-overview h1{
+    margin-left: 2rem;
+    font-size: 3.5rem;
+    color: #0c0d3b;
+    text-align: center;
+}
+
+.data-collection li::marker{
+    content: "★";
+    color: #FF7A3D;
+}
+
+.data-collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    color: #0c0d3b;
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/  
+    font-size: 2rem;
+}
+
+.dashboard-design h1{
+    text-align: center; 
+    color: #0c0d3b;
+}
+
+.dashboard-design li::marker{
+    content: "★";
+    color: #FF7A3D;
+}
+
+.dashboard-design{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/  
+    font-size: 2rem;
+    color: #0c0d3b;
+}
+
+.results2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/  
+    font-size: 1.75rem;
+    color: #0c0d3b;
+}
+
+
+
+.data-collection {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.data-collection ul{
+    margin-top:.25rem;
+    margin-bottom:.25rem;
+}
+
+.data-collection h1{
+    margin-left: 2rem;
+    font-size: 3.5rem;
+    color: #0c0d3b;
+    text-align: center;
+}
+
+.data-collection hr{
+    margin:.1rem;
+    border: solid 2px #FF7A3D;
+    width: 35%;
+    
+}
+
+.dashboard-design {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.dashboard-design ul{
+    margin-top:.25rem;
+    margin-bottom:.25rem;
+}
+
+.results2 p{
+    margin-top:.25rem;
+    margin-bottom:.25rem;
+}
+
+.results2 {
+    grid-column: span 2;
+    grid-row: 3;
+}
+
+.results2 hr{
+    margin:.1rem;
+    border: solid 2px #FF7A3D;
+    width: 35%;
+    
+}
+
+.dashboard2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    
+    flex-direction: column;    
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);*/  
+   
+    
+}
+
+.dashboard2 img{
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+    .floating-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 750;
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+.floating-button a:hover{
+    background-color: #FF7A3D;
+}
+
+.Script-link{
+    text-align: center;
+}
+    .Script-link a{
+    margin-top: 1rem;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0c0d3b;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 750;
+    font-size: 1.5rem;
+    
+    }
+    .Script-link a:hover{
+    background-color: #FF7A3D;
+    }
+
+    .event-design{
+    display: flex;  
+    justify-content: column;
+    align-items: center;
+    margin: 0;
+}
+
+.Visualizations{
+    margin-left: 0;
+}
+
+        /* Media query for screens 576px and smaller */
+@media screen and (max-width: 768px) {
+.floating-button a {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+}
+.Script-link a {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+}
+}
+
+/* ✅ Even smaller for mobile devices */
+@media screen and (max-width: 480px) {
+.floating-button a {
+    font-size: 1rem;
+    padding: 6px 10px;
+}
+.Script-link a {
+    font-size: 1rem;
+    padding: 6px 10px;
+}
+}
+    
+
+
+</style>
+
+</head>
+
+
+<body>
+    
+        <section class="page3 fade-in">
+                <div class="section-header">
+                    <h1>Forest And Fairways Charity Scramble</h1>
+                    <hr>
+                </div>
+                
+                        <div class="event-design">
+                                <div class="dashboard2">
+                                    <img src="images/IMG_7720w.JPG" alt="Isaiah Warner" style="width: 70%;">
+                                </div>
+                            
+                            <div class="Visualizations">
+                            
+                            <p>This project started as a goal that I set for my self
+                                at the begining of 2025 to give back to the community.
+                                I decided to host a charity golf tournament to raise money
+                                for a local food bank. 
+                                I wanted to create a fun and competitive event that would bring
+                                together golf enthusiasts and community members for a good cause.
+                                
+                            </p>
+                            </div>
+                            </div>
+                <div class="project-overview">    
+                    <h1>Forest and Fairways Webpage</h1>
+                    <p>I leveraged my skills in HTML, CSS, and JavaScript to create a 
+                        Website where participants of the event could register or make donations. 
+                    </p>
+                    <div class="section-header">
+                        <p style="font-size: 3.5rem; color:#0c0d3b;"> This webpage featured:</p>
+                        <hr>
+                        </div>
+                            <ul>
+                                <li>CSS for Styling and Responsive design elements</li>
+                                <li>Registration and Donation buttons with embeded third party forms to handle Donation and Registrations</li>
+                                <li>The Event Details & Team cards had accordion functionality using JavaScript</li>
+                            </ul>
+                        
+                        <div class="Script-link">
+                                <a href="https://zay1r.github.io/Forest-Fairways.github.io/index-forest-fairway.html" target="_blank">Click here to View Event website</a>
+                            </div>
+            
+                </div>
+                
+        
+
+                    
+                        <div class="floating-button">
+                            <a href="index.html">Back to Home Page</a>
+                        </div>
+                    <div class="data-collection">
+                        <h1>Team LeaderBoard Full Stack WEb application</h1>
+                        <hr>
+                        <p> 
+                            full-stack
+                            web application that served as a leaderboard for the tournament.
+                            I created this leaderboard to Track the team scores for a Charity Golf Scramble event. 
+                            I  used a combination of front-end and back-end technologies to build the application.
+                            On the front-end, I used HTML, CSS, and JavaScript to create a user-friendly interface that allowed users to view the leaderboard and team scores.
+                            On the back-end, I used Node.js, and Render to create a server that handled requests and responses.
+                            I also used a  Postgres SQL database to store the team scores and other relevant information like Team names and Passwords, and I used it to seed the database with the hole information.
+                            The application allowed users to view the leaderboard in real-time,
+                            with scores updating automatically as teams completed their rounds. 
+
+                        </p>
+                    </div>
+                
+                    <div class="results2">
+                        <h1>Results and Key Takeaways</h1>
+                        <hr>
+                        <p>
+                            with the help of some friends and family we were able to raise over $1,200 for the local food bank.
+                            The event was a huge success, and I received positive feedback from participants and attendees.
+                            I am proud to have been able to use my skills to make a positive impact in my community.
+                            This project not only allowed me to give back but also helped me grow as a developer by applying 
+                            my technical skills to a real-world scenario. I was able to create a functional and user-friendly
+                            web application that met the needs of the event and its participants. I learned new skills and gained
+                            valuable experience in full-stack web development. As well as project management and event planning. Overall, 
+                            this project was a rewarding experience that allowed me to combine my passion for technology with my desire to make a difference in the world.
+                            
+                            </p>
+                            <br>
+                    </div>
+                    <div class="Script-link">
+                                <a href="https://github.com/zay1r/Forest-Fairways.github.io" target="_blank">Click Here to view the Github Repo</a>
+                            </div>
+
+                </section>
+</body>
+
+</html>
