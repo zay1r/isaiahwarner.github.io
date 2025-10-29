@@ -282,6 +282,17 @@ body {
     margin: 0;
 }
 
+.videomp4{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 5%;
+
+}
+
 .Visualizations{
     margin-left: 0;
 }
@@ -372,6 +383,12 @@ body {
                     <div class="data-collection">
                         <h1 style="margin-bottom: 0.5rem;">Team LeaderBoard Full Stack WEb application</h1>
                         <hr>
+                        <div class="videomp4">
+                            <video width="640" height="360" controls autoplay muted loop poster="images/thumbnail.jpg">
+                                <source src="images/GolfLeaderboard.mp4" type="video/mp4">
+                                Sorry, your browser doesn’t support embedded videos.
+                            </video>
+                            </div>
                         <p> 
                             full-stack
                             web application that served as a leaderboard for the tournament.
@@ -389,6 +406,7 @@ body {
                     <div class="results2">
                         <h1 style="margin-bottom: 0.5rem;">Results and Key Takeaways</h1>
                         <hr>
+                        
                         <p>
                             with the help of some friends and family we were able to raise over $1,200 for the local food bank.
                             The event was a huge success, and I received positive feedback from participants and attendees.
